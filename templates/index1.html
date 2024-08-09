@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static '/css/style.css' %}"/>
+    </head>
+    <body>
+
+        <h1>welcome to our site</h1>
+        <a href="">home</a>&nbsp;&nbsp;&nbsp;
+        <a href="about">about</a>
+        <a href="show">show</a>
+        <h1>name is {{ name }}</h1>
+        <h1>age is {{ age }}</h1>
+        <h1>place is {{ place }}</h1>
+        {% if age == 18 %}
+        <h2>eligible</h2>
+        {% elif age > 25 %}
+        <h2>well settled</h2>
+        {% else %}
+        <h2>not settled</h2>
+        {% endif %}
+        {% for i in 'DJANGO' %}
+        <h4>{{ i }}</h4>
+        {% endfor %}
+        
+        
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device.width,initial-scale=1.0">
+            <title>documenr</title>
+        </head>
+        <body>
+            <h1>welcome {{ request.session.uname }}
+            </h1>
+            <a href="{% url 'signin' %}">login</a>&nbsp;&nbsp;&nbsp;
+            <a href="{% url 'register' %}">register</a>
+            <a href="{% url 'logout' %}">logout</a>
+            <a href="{% url 'viewall' %}">viewall</a>
+
+        </body>
+        </html>
